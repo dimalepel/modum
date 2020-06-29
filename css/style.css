@@ -324,11 +324,14 @@ a {
   justify-content: center;
   width: 24px;
   height: 24px;
+  padding-top: 2px;
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
   text-transform: uppercase;
   color: var(--basic-dark);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   background-color: var(--basic-white);
   border-radius: 50%; }
   body:not(.home) .header-cart__counter {
@@ -340,7 +343,11 @@ a {
   background-color: var(--basic-light-gray);
   background-image: url("../images/bg-promo-decoration.png");
   background-position: 30px 100%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  overflow: hidden; }
+  @media (max-width: 1440px) {
+    .promo {
+      height: 740px; } }
   .promo::before {
     content: "";
     position: absolute;
@@ -349,6 +356,13 @@ a {
     background-image: url("../images/bg-promo-figure.svg");
     background-position: center;
     background-repeat: no-repeat; }
+    @media (max-width: 1440px) {
+      .promo::before {
+        left: -27px;
+        height: 740px;
+        width: 77px;
+        background-position: center right;
+        background-size: contain; } }
 
 .promo__girl {
   position: absolute;
@@ -356,7 +370,9 @@ a {
   right: 0; }
   @media (max-width: 1440px) {
     .promo__girl {
-      right: -140px; } }
+      right: 0;
+      bottom: -30px;
+      width: 612px; } }
 
 .promo__inner {
   position: relative;
@@ -377,10 +393,15 @@ a {
   top: 220px; }
   @media (max-width: 1440px) {
     .promo__decoration {
-      left: -10px; } }
+      left: -10px;
+      top: 148px;
+      height: 530px; } }
 
 .promo__text {
   margin-top: 220px; }
+  @media (max-width: 1440px) {
+    .promo__text {
+      margin-top: 150px; } }
 
 .promo__description {
   max-width: 620px;
@@ -545,6 +566,10 @@ a {
   .stages-item:nth-child(1) .stages-item__step,
   .stages-item:nth-child(2) .stages-item__step {
     right: -40px; }
+
+.stages-item__thumbnail {
+  -webkit-filter: drop-shadow(-41px 35px 49px rgba(50, 85, 77, 0.18));
+  filter: drop-shadow(-41px 35px 49px rgba(50, 85, 77, 0.18)); }
 
 .stages-detail {
   margin-top: 47px;
