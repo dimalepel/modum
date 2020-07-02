@@ -9,12 +9,20 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-  <body>
+  <body class="complex-card">
   <div class="page-wrapper">
     <!-- header -->
 <header class="page-header">
   <div class="container">
     <div class="page-header__inner">
+      <button class="menu-trigger" type="button">
+        <span class="menu-trigger__icon">
+          <span class="menu-trigger__line"></span>
+          <span class="menu-trigger__line"></span>
+          <span class="menu-trigger__line"></span>
+        </span>
+        Меню
+      </button>
       <nav class="page-header__menu-wrapper">
         <ul class="main-menu">
           <li>
@@ -51,15 +59,20 @@
         <div class="card__overlay">
           <div class="container">
             <div class="card__inner">
+              <div class="card__data">
+                <p class="card__title">Комплекс «Сила и Рост волос» серии «Modum Bamboo»</p>
+              </div>
               <img class="card__thumbnail" src="images/thumb-card-complex.jpg" alt="" width="530" height="530">
               <div class="card__content">
-                <h1 class="card__title">Комплекс «Сила и Рост волос» серии «Modum Bamboo»</h1>
+                <div class="card__data">
+                  <h1 class="card__title">Комплекс «Сила и Рост волос» серии «Modum Bamboo»</h1>
+                </div>
                 <p class="card__price">44 byn</p>
                 <div class="card__buttons">
                   <a class="card__add-cart" href="#">положить В корзину</a>
                 </div>
                 <div class="card__detail card__detail--about">
-                  <p><b>В комплекс входит:</b></p>
+                  <p class="card__detail-title"><b>В комплекс входит:</b></p>
                   <ul>
                     <li>Сыворотка интенсивная Сила и Рост волос серия MODUM BAMBOO, 50 мл</li>
                     <li>Шампунь Сила и Рост волос серии Modum Bamboo, 300 мл</li>
@@ -68,7 +81,7 @@
                   </ul>
                 </div>
                 <div class="card__detail card__detail--delivery">
-                  <p>Минимальный заказ — 25 рублей, доставка по Минску курьером — 5 рублей, самовывоз с ул. Володько 6/6 — бесплатно (<a href="#">смотреть на карте</a>)</p>
+                  <p>При заказе до 25 р — доставка 10 р, при заказе от 25 рублей доставка - 5р, при заказе от 50 р — доставка бесплатно по Минску. Доставка в областные центры по тарифам evropochta.by. Самовывоз с ул. Володько 6/6 — бесплатно (<a href="#">смотреть на карте</a>)</p>
                 </div>
               </div>
             </div>
@@ -79,7 +92,7 @@
             <input id="tab1" type="radio" name="tabs" checked="">
             <label class="card-tabs__item" for="tab1">Описание</label>
             <input id="tab2" type="radio" name="tabs">
-            <label class="card-tabs__item" for="tab2">Активыные компоненты</label>
+            <label class="card-tabs__item" for="tab2">Активные компоненты</label>
             <input id="tab3" type="radio" name="tabs">
             <label class="card-tabs__item" for="tab3">Способ применения</label>
             <div class="card-tabs__content">
@@ -156,7 +169,10 @@
           <ul class="catalog">
             <li class="product">
               <div class="product__thumbnail-wrapper">
-                <img class="product__thumbnail" src="images/thumb-product-9.jpg" alt="" width="166" height="216">
+                <picture>
+                  <source srcset="images/thumb-product-9--mob.jpg" media="(max-width: 480px)">
+                  <img class="product__thumbnail" src="images/thumb-product-9.jpg" alt="">
+                </picture>
               </div>
               <p class="product__stage">&nbsp;</p>
               <a class="product__title" href="#">Спрей-уход для волос несмываемый  серии Modum Bamboo, 150 мл</a>
@@ -172,7 +188,10 @@
             </li>
             <li class="product">
               <div class="product__thumbnail-wrapper">
-                <img class="product__thumbnail" src="images/thumb-product-10.jpg" alt="" width="121" height="147">
+                <picture>
+                  <source srcset="images/thumb-product-10--mob.jpg" media="(max-width: 480px)">
+                  <img class="product__thumbnail" src="images/thumb-product-10.jpg" alt="">
+                </picture>
               </div>
               <p class="product__stage">&nbsp;</p>
               <a class="product__title" href="#">Флюид для повреждённых кончиков волос серии Modum Bamboo, 30 мл</a>
@@ -188,7 +207,10 @@
             </li>
             <li class="product">
               <div class="product__thumbnail-wrapper">
-                <img class="product__thumbnail" src="images/thumb-product-2.jpg" alt="" width="146" height="216">
+                <picture>
+                  <source srcset="images/thumb-product-2--mob.jpg" media="(max-width: 480px)">
+                  <img class="product__thumbnail" src="images/thumb-product-2.jpg" alt="">
+                </picture>
               </div>
               <p class="product__stage">этап 1</p>
               <a class="product__title" href="#">Сыворотка интенсивная Сила и Рост волос серии Modum Bamboo, 20 мл</a>
@@ -204,7 +226,10 @@
             </li>
             <li class="product">
               <div class="product__thumbnail-wrapper">
-                <img class="product__thumbnail" src="images/thumb-product-4.jpg" alt="" width="162" height="243">
+                <picture>
+                  <source srcset="images/thumb-product-4--mob.jpg" media="(max-width: 480px)">
+                  <img class="product__thumbnail" src="images/thumb-product-4.jpg" alt="">
+                </picture>
               </div>
               <p class="product__stage">этап 2</p>
               <a class="product__title" href="#">Шампунь Сила и Рост волос серии Modum Bamboo, 720 г</a>

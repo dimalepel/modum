@@ -15,6 +15,14 @@
 <header class="page-header">
   <div class="container">
     <div class="page-header__inner">
+      <button class="menu-trigger" type="button">
+        <span class="menu-trigger__icon">
+          <span class="menu-trigger__line"></span>
+          <span class="menu-trigger__line"></span>
+          <span class="menu-trigger__line"></span>
+        </span>
+        Меню
+      </button>
       <nav class="page-header__menu-wrapper">
         <ul class="main-menu">
           <li>
@@ -126,7 +134,7 @@
         <div class="container">
           <div class="order-main">
             <h2 class="order__title">Оформление заказа</h2>
-            <div class="order-item">
+            <div class="order-item order-item--personal-data">
               <p class="order-item__title">Данные получателя</p>
               <label class="form-field__wrapper">
                 <span class="visually-hidden">Имя</span>
@@ -169,7 +177,7 @@
               </div>
             </div>
 
-            <div class="order-item">
+            <div class="order-item order-item--location">
               <p class="order-item__title">Адрес доставки</p>
               <label class="form-field__wrapper">
                 <span class="visually-hidden">Город</span>

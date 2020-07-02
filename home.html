@@ -15,6 +15,14 @@
 <header class="page-header">
   <div class="container">
     <div class="page-header__inner">
+      <button class="menu-trigger" type="button">
+        <span class="menu-trigger__icon">
+          <span class="menu-trigger__line"></span>
+          <span class="menu-trigger__line"></span>
+          <span class="menu-trigger__line"></span>
+        </span>
+        Меню
+      </button>
       <nav class="page-header__menu-wrapper">
         <ul class="main-menu">
           <li>
@@ -51,7 +59,10 @@
         <img class="promo__girl" src="images/thumb-promo-girl.jpg" alt="" width="767" height="850">
         <div class="container">
           <div class="promo__inner">
-            <img class="promo__decoration" src="images/text-bamboo.svg" alt="" width="165" height="546">
+            <picture>
+              <source srcset="images/text-bamboo--mob.svg" media="(max-width: 480px)">
+              <img class="promo__decoration" src="images/text-bamboo.svg" alt="" width="165" height="546">
+            </picture>
             <img class="promo__text" src="images/text-strong.svg" alt="" width="550" height="89">
             <p class="promo__description">Интенсивный курс против выпадения волос</p>
             <img class="promo__thumbnail" src="images/thumb-promo.png" alt="" width="448" height="279">
@@ -67,24 +78,24 @@
             <article class="about-item">
               <p class="about-item__title">КЛИНИЧЕСКИ ДОКАЗАНО*</p>
               <ul class="about-item__description">
-                <li>— уменьшение выпадения волос</li>
-                <li>— увеличение толщины волоса</li>
-                <li>— увеличение блеска и гладкости волос</li>
+                <li>уменьшение выпадения волос</li>
+                <li>увеличение толщины волоса</li>
+                <li>увеличение блеска и гладкости волос</li>
               </ul>
             </article>
             <article class="about-item">
-              <p class="about-item__title">ВСЕГО ЗА 1 МЕСЯЦ ПРИМЕНЕНИЯ КУРСА</p>
+              <p class="about-item__title">ВСЕГО ЗА 1 МЕСЯЦ</p>
               <ul class="about-item__description">
-                <li>— решение проблемы выпадения волос</li>
-                <li>— восстановление активного роста волос у женщин после беременности и родов</li>
-                <li>— оздоровление и стимуляция роста волос у мужчин</li>
+                <li>решение проблемы выпадения волос</li>
+                <li>восстановление активного роста волос у женщин после беременности и родов</li>
+                <li>оздоровление и стимуляция роста волос у мужчин</li>
               </ul>
             </article>
             <article class="about-item">
               <p class="about-item__title">СЕКРЕТ ЭФФЕКТИВНОСТИ</p>
               <ul class="about-item__description">
-                <li>— уникальные, специально сбалансированные формулы, разработанные Сектором научных исследований компании MODUM</li>
-                <li>— мощный целебный коктейль из биологически-активных компонентов</li>
+                <li>уникальные, специально сбалансированные формулы, разработанные Сектором научных исследований компании MODUM</li>
+                <li>мощный целебный коктейль из биологически-активных компонентов</li>
               </ul>
             </article>
           </div>
@@ -129,23 +140,26 @@
               <li class="stages-detail__item">
                 <p class="stages-detail__step">этап 3</p>
                 <p class="stages-detail__title">бальзам-кондиционер</p>
-                <p class="stages-detail__description">Для частого использования. Обеспечивает быстрое разглаживающее и смягчающее воздействие, делая волосы блестящими и послушными в укладке. Помогает удерживать влагу в стержне волоса. Обладает антистатическим действием.</p>
+                <p class="stages-detail__description">Для частого использования. Обеспечивает быстрое разглаживающее и смягчающее воздействие, делая волосы блестящими и послушными в укладке. Помогает удерживать влагу в стержне волоса. Обладает антистатическим действием. Обладает антистатическим действием после каждого мытья головы.</p>
               </li>
               <li class="stages-detail__item">
                 <p class="stages-detail__step">этап 3</p>
                 <p class="stages-detail__title">крем-маска интенсивная</p>
-                <p class="stages-detail__description">1-2 раза в неделю. Воздействует комплексно: продлевает фазу активного роста волос, питая луковицы и стимулируя кровоснабжение, утолщает, укрепляет стержень волоса, «ремонтируя» возможные повреждения внешнего слоя.</p>
+                <p class="stages-detail__description">Применять в качестве смываемого ухаживающего средства 1-2 раза в неделю вместо Бальзама. Воздействует комплексно: продлевает фазу активного роста волос, питая луковицы и стимулируя кровоснабжение, утолщает, укрепляет стержень волоса, «ремонтируя» возможные повреждения внешнего слоя.</p>
               </li>
             </ul>
           </section>
 
           <ul id="catalog" class="catalog">
-            <li class="product">
+            <li class="product product-label product-label--bestseller">
               <div class="product__thumbnail-wrapper">
-                <img class="product__thumbnail" src="images/thumb-product-1.jpg" alt="" width="270" height="180">
+                <picture>
+                  <source srcset="images/thumb-product-1--mob.jpg" media="(max-width: 480px)">
+                  <img class="product__thumbnail" src="images/thumb-product-1.jpg" alt="">
+                </picture>
               </div>
               <p class="product__stage">этап 1</p>
-              <a class="product__title" href="#">Сыворотка интенсивная Сила и Рост волос серия MODUM BAMBOO, 50 мл</a>
+              <a class="product__title" href="#">Сыворотка интенсивная Сила и Рост волос серия Modum Bamboo, 50 мл</a>
               <div class="product__active">
                 <p class="product__price">22 byn</p>
                 <a class="product__add-cart" href="#">
@@ -158,7 +172,10 @@
             </li>
             <li class="product">
               <div class="product__thumbnail-wrapper">
-                <img class="product__thumbnail" src="images/thumb-product-2.jpg" alt="" width="146" height="216">
+                <picture>
+                  <source srcset="images/thumb-product-2--mob.jpg" media="(max-width: 480px)">
+                  <img class="product__thumbnail" src="images/thumb-product-2.jpg" alt="">
+                </picture>
               </div>
               <p class="product__stage">этап 1</p>
               <a class="product__title" href="#">Сыворотка интенсивная Сила и Рост волос серии Modum Bamboo, 20 мл</a>
@@ -172,9 +189,12 @@
                 </a>
               </div>
             </li>
-            <li class="product">
+            <li class="product product-label product-label--bestseller">
               <div class="product__thumbnail-wrapper">
-                <img class="product__thumbnail" src="images/thumb-product-3.jpg" alt="" width="203" height="243">
+                <picture>
+                  <source srcset="images/thumb-product-3--mob.jpg" media="(max-width: 480px)">
+                  <img class="product__thumbnail" src="images/thumb-product-3.jpg" alt="">
+                </picture>
               </div>
               <p class="product__stage">этап 2</p>
               <a class="product__title" href="#">Шампунь Сила и Рост волос серии Modum Bamboo, 300 мл</a>
@@ -188,9 +208,12 @@
                 </a>
               </div>
             </li>
-            <li class="product">
+            <li class="product product-label product-label--hit">
               <div class="product__thumbnail-wrapper">
-                <img class="product__thumbnail" src="images/thumb-product-4.jpg" alt="" width="162" height="243">
+                <picture>
+                  <source srcset="images/thumb-product-4--mob.jpg" media="(max-width: 480px)">
+                  <img class="product__thumbnail" src="images/thumb-product-4.jpg" alt="">
+                </picture>
               </div>
               <p class="product__stage">этап 2</p>
               <a class="product__title" href="#">Шампунь Сила и Рост волос серии Modum Bamboo, 720 г</a>
@@ -204,12 +227,15 @@
                 </a>
               </div>
             </li>
-            <li class="product">
+            <li class="product product-label product-label--new">
               <div class="product__thumbnail-wrapper">
-                <img class="product__thumbnail" src="images/thumb-product-5.jpg" alt="" width="162" height="243">
+                <picture>
+                  <source srcset="images/thumb-product-5--mob.jpg" media="(max-width: 480px)">
+                  <img class="product__thumbnail" src="images/thumb-product-5.jpg" alt="">
+                </picture>
               </div>
               <p class="product__stage">этап 2</p>
-              <a class="product__title" href="#">Шампунь бессульфатный MODUM BAMBOO Сила и Рост волос, 325 мл</a>
+              <a class="product__title" href="#">Шампунь бессульфатный Modum Bamboo Сила и Рост волос, 325 мл</a>
               <div class="product__active">
                 <p class="product__price">10,50 byn</p>
                 <a class="product__add-cart" href="#">
@@ -222,7 +248,10 @@
             </li>
             <li class="product">
               <div class="product__thumbnail-wrapper">
-                <img class="product__thumbnail" src="images/thumb-product-6.jpg" alt="" width="193" height="243">
+                <picture>
+                  <source srcset="images/thumb-product-6--mob.jpg" media="(max-width: 480px)">
+                  <img class="product__thumbnail" src="images/thumb-product-6.jpg" alt="">
+                </picture>
               </div>
               <p class="product__stage">этап 3</p>
               <a class="product__title" href="#">Бальзам-кондиционер Сила и рост волос серии Modum Bamboo, 300 мл</a>
@@ -238,7 +267,10 @@
             </li>
             <li class="product">
               <div class="product__thumbnail-wrapper">
-                <img class="product__thumbnail" src="images/thumb-product-7.jpg" alt="" width="80" height="221">
+                <picture>
+                  <source srcset="images/thumb-product-7--mob.jpg" media="(max-width: 480px)">
+                  <img class="product__thumbnail" src="images/thumb-product-7.jpg" alt="">
+                </picture>
               </div>
               <p class="product__stage">этап 3</p>
               <a class="product__title" href="#">Бальзам-кондиционер Сила и рост волос серии Modum Bamboo, 700 г</a>
@@ -254,7 +286,10 @@
             </li>
             <li class="product">
               <div class="product__thumbnail-wrapper">
-                <img class="product__thumbnail" src="images/thumb-product-8.jpg" alt="" width="148" height="153">
+                <picture>
+                  <source srcset="images/thumb-product-8--mob.jpg" media="(max-width: 480px)">
+                  <img class="product__thumbnail" src="images/thumb-product-8.jpg" alt="">
+                </picture>
               </div>
               <p class="product__stage">этап 3</p>
               <a class="product__title" href="#">Крем-маска интенсивная Сила и рост волос серии Modum Bamboo, 200 мл</a>
@@ -270,7 +305,10 @@
             </li>
             <li class="product">
               <div class="product__thumbnail-wrapper">
-                <img class="product__thumbnail" src="images/thumb-product-9.jpg" alt="" width="166" height="216">
+                <picture>
+                  <source srcset="images/thumb-product-9--mob.jpg" media="(max-width: 480px)">
+                  <img class="product__thumbnail" src="images/thumb-product-9.jpg" alt="">
+                </picture>
               </div>
               <p class="product__stage">&nbsp;</p>
               <a class="product__title" href="#">Спрей-уход для волос несмываемый  серии Modum Bamboo, 150 мл</a>
@@ -284,9 +322,12 @@
                 </a>
               </div>
             </li>
-            <li class="product">
+            <li class="product product-label product-label--bestseller">
               <div class="product__thumbnail-wrapper">
-                <img class="product__thumbnail" src="images/thumb-product-10.jpg" alt="" width="121" height="147">
+                <picture>
+                  <source srcset="images/thumb-product-10--mob.jpg" media="(max-width: 480px)">
+                  <img class="product__thumbnail" src="images/thumb-product-10.jpg" alt="">
+                </picture>
               </div>
               <p class="product__stage">&nbsp;</p>
               <a class="product__title" href="#">Флюид для повреждённых кончиков волос серии Modum Bamboo, 30 мл</a>
@@ -308,11 +349,11 @@
           <section id="history-brand" class="history-brand">
             <div class="history-brand__inner">
               <h2 class="history-brand__title">История возникновения Modum Bamboo</h2>
-              <p>На создание MODUM BAMBOO нас вдохновила красивая легенда о жизненной силе бамбука.</p>
+              <p>На создание Modum Bamboo нас вдохновила красивая легенда о жизненной силе бамбука.</p>
               <p>Высокая зеленая бамбуковая роща широко раскинулась на склоне горы. Каждое утро радостным шелестом бамбук приветствовал первые лучи солнца, а днём дарил приятною прохладу обитателям рощи – птицам, животным и насекомым. Однажды люди решили поселиться здесь. Они начали вырубать густые заросли бамбука. Но, возвращаясь на следующий день, видели, что на месте уничтоженных растений появилось множество молодых побегов. Люди были очень усердны, но бамбук отличался невероятной жизненной силой. Бамбук знал о своей чудесной способности расти быстрее всех в земном мире и не обижался на человека.</p>
               <p>Люди скоро поняли бессмысленность своей затеи бороться с бамбуком и оставили рощу. В благодарность людям были подарены знания о том, что из стволов бамбука можно построить крепкие дома, из волокон сшить прочную одежду, а из молодых побегов приготовить вкусную пищу. А бамбук стал символом счастья и долголетия.</p>
               <p>Бамбук — уникальное растение прочное и одновременно гибкое, лёгкое и изящное, а скорость его роста до 1 метра за сутки просто поразительна. За короткий промежуток времени заросли бамбука способны заполонить все свободное пространство.</p>
-              <p><span>Modum Bamboo</span> – это сила и энергия для быстрого роста ваших волос, активный эликсир для их жизненной устойчивости, сияния и красоты.</p>
+              <p>Modum Bamboo – это сила и энергия для быстрого роста ваших волос, активный эликсир для их жизненной устойчивости, сияния и красоты.</p>
             </div>
           </section>
         </div>
@@ -323,26 +364,26 @@
           <p class="section-title__sub">мнение экспертов</p>
           <h2 class="section-title">Полезная информация и статьи</h2>
           <div class="articles">
-            <article class="article-item">
+            <a href="https://www.modum.by/ru/news/info/stroenie-volos" target="_blank" class="article-item">
               <img class="article-item__thumbnail" src="images/thumb-article-1.png" alt="" width="200" height="200">
               <p class="article-item__title">Cтроение волос, их основные свойства и жизненный цикл</p>
-              <a class="article-item__more" href="https://www.modum.by/ru/news/info/stroenie-volos" target="_blank">узнать больше</a>
-            </article>
-            <article class="article-item">
+              <span class="article-item__more">узнать больше</span>
+            </a>
+            <a href="https://www.modum.by/ru/news/~shownews/kosmeticheskie-problemy-volos" target="_blank" class="article-item">
               <img class="article-item__thumbnail" src="images/thumb-article-2.png" alt="" width="200" height="200">
               <p class="article-item__title">Косметические проблемы волос</p>
-              <a class="article-item__more" href="https://www.modum.by/ru/news/~shownews/kosmeticheskie-problemy-volos" target="_blank">узнать больше</a>
-            </article>
-            <article class="article-item">
+              <span class="article-item__more">узнать больше</span>
+            </a>
+            <a href="https://www.modum.by/ru/news/info/vypadenie-volos" target="_blank" class="article-item">
               <img class="article-item__thumbnail" src="images/thumb-article-3.png" alt="" width="200" height="200">
               <p class="article-item__title">Выпадение волос</p>
-              <a class="article-item__more" href="https://www.modum.by/ru/news/info/vypadenie-volos" target="_blank">узнать больше</a>
-            </article>
-            <article class="article-item">
+              <span class="article-item__more">узнать больше</span>
+            </a>
+            <a href="https://www.modum.by/ru/news/info/kosmetika-naznachenie-i-anatomija" target="_blank" class="article-item">
               <img class="article-item__thumbnail" src="images/thumb-article-4.png" alt="" width="200" height="200">
               <p class="article-item__title">Назначение и анатомия состава. Шампуни</p>
-              <a class="article-item__more" href="https://www.modum.by/ru/news/info/kosmetika-naznachenie-i-anatomija" target="_blank">узнать больше</a>
-            </article>
+              <span class="article-item__more">узнать больше</span>
+            </a>
           </div>
         </div>
       </section>
@@ -351,7 +392,7 @@
         <div class="container">
           <img class="faq__person" src="images/thumb-faq.jpg" alt="" width="160" height="160">
           <p class="faq__title">Часто задаваемые вопросы</p>
-          <p class="faq__sub-title">Отвечает эксперт нашей лаборатории</p>
+          <p class="faq__sub-title">Отвечает эксперт, Анна, химик Сектора научных исследований</p>
           <div class="faq__list">
             <article class="faq-item">
               <p class="faq-item__title">Через какое время я замечу результат от применения комплекса?</p>
@@ -362,20 +403,20 @@
               <p class="faq-item__detail">Советуем Вам незамедлительно посетить врача-трихолога, чтобы установить конкретную причину. Доктор осмотрит вас и правильно подберет программу лечения. Возможно также потребуется консультация гинеколога-эндокринолога и анализ на гормоны.  </p>
             </article>
             <article class="faq-item">
-              <p class="faq-item__title">Является ли косметика MODUM BAMBOO лечебной?</p>
-              <p class="faq-item__detail">Косметика MODUM BAMBOO не относится к лечебной, это уходовые средства с доказанной клинически подтверждённой эффективностью: при применении комплекса в течение месяца уменьшается выпадение волос, увеличивается толщина волоса (по результатам клинического исследования проведённого АНО «Центр по сертификации парфюмерно-косметической продукции и услуг «Косметик-Тест» SSAQ000.5.1.0030).</p>
+              <p class="faq-item__title">Является ли косметика Modum Bamboo лечебной?</p>
+              <p class="faq-item__detail">Косметика Modum Bamboo не относится к лечебной, это уходовые средства с доказанной клинически подтверждённой эффективностью: при применении комплекса в течение месяца уменьшается выпадение волос, увеличивается толщина волоса (по результатам клинического исследования проведённого АНО «Центр по сертификации парфюмерно-косметической продукции и услуг «Косметик-Тест» SSAQ000.5.1.0030).</p>
             </article>
             <article class="faq-item">
-              <p class="faq-item__title">Могу ли я использовать отдельные продукты MODUM BAMBOO, например шампунь, или обязательное условие получение результата – это применение всего комплекса.</p>
-              <p class="faq-item__detail">Конечно же Вы можете использовать продукты серии MODUM BAMBOO как средства ежедневного ухода за волосами. Результатом использования шампуня, бальзама- кондиционера, крем- маски, спрей-ухода или флюида MODUM BAMBOO по отдельности или в комбинации будут красивые, здоровые, послушные в укладке, блестящие и шелковистые волосы, защищённые от негативного воздействия внешней среды. А, например, с целью профилактики выпадения волос можно использовать Сыворотку интенсивную Сила и Рост волос серии MODUM BAMBOO не курсом в составе комплекса, а раз в неделю одну монодозу. </p>
+              <p class="faq-item__title">Могу ли я использовать отдельные продукты Modum Bamboo, например шампунь, или обязательное условие получение результата – это применение всего комплекса.</p>
+              <p class="faq-item__detail">Конечно же Вы можете использовать продукты серии Modum Bamboo как средства ежедневного ухода за волосами. Результатом использования шампуня, бальзама- кондиционера, крем- маски, спрей-ухода или флюида Modum Bamboo по отдельности или в комбинации будут красивые, здоровые, послушные в укладке, блестящие и шелковистые волосы, защищённые от негативного воздействия внешней среды. А, например, с целью профилактики выпадения волос можно использовать Сыворотку интенсивную Сила и Рост волос серии Modum Bamboo не курсом в составе комплекса, а раз в неделю одну монодозу. </p>
             </article>
             <article class="faq-item">
               <p class="faq-item__title">Очень хочу отрастить волосы, они у меня тонкие и не очень объёмные, к тому же кончики секутся и торчат во все стороны. «Волосопад» замечаю чаще весной. Какие будут Ваши рекомендации в моём случае? </p>
-              <p class="faq-item__detail">Советуем Вам раз в полгода пользоваться полным комплексом MODUM BAMBOO: это защитит волосы от сезонного выпадения, активизирует их рост. Чтобы волосы не теряли объём, бальзам-кондиционер наносите, отступив два сантиметра от корней волос. Если для придания объёма, вы используете фен, рекомендуем перед укладкой нанести на волосы Спрей-уход несмываемый. Запечатает повреждённые кончики и защитит стержень волоса от дальнейшего разрушения Флюид серии MODUM BAMBOO. Тем не менее советуем подстригать кончики с определённой периодичностью. Ведь после использования комплекса MODUM BAMBOO Вы непременно отметите положительные результаты, и корректировка длины компенсируется быстрым ростом волос.</p>
+              <p class="faq-item__detail">Советуем Вам раз в полгода пользоваться полным комплексом Modum Bamboo: это защитит волосы от сезонного выпадения, активизирует их рост. Чтобы волосы не теряли объём, бальзам-кондиционер наносите, отступив два сантиметра от корней волос. Если для придания объёма, вы используете фен, рекомендуем перед укладкой нанести на волосы Спрей-уход несмываемый. Запечатает повреждённые кончики и защитит стержень волоса от дальнейшего разрушения Флюид серии Modum Bamboo. Тем не менее советуем подстригать кончики с определённой периодичностью. Ведь после использования комплекса Modum Bamboo Вы непременно отметите положительные результаты, и корректировка длины компенсируется быстрым ростом волос.</p>
             </article>
             <article class="faq-item">
               <p class="faq-item__title">У моего мужа последнее время стали выпадать волосы. Подойдет ли Ваш комплекс для мужчин? </p>
-              <p class="faq-item__detail">Комплекс MODUM BAMBOO подходит для решения проблемы выпадения волос как у женщин, так и у мужчин. При разработке средств мы обязательно учитывали некоторые дополнительные моменты: например, мы не использовали яркие парфюмированные ароматы: в ароматах наших продуктов преобладают лёгкие древесные, хвойные, цитрусовые, лавандовые или мятные ноты. В составе средств есть специальные компоненты, которые отвечают за регуляцию работы сальных желёз или за снятие мышечного спазма (это одни из частых причин выпадения волос у мужчин). Это и удобная упаковка сыворотки в монодозы, использование которых не требуют сложных и длительных манипуляций – средство наносится непосредственно на кожу головы за 30 минут до мытья. </p>
+              <p class="faq-item__detail">Комплекс Modum Bamboo подходит для решения проблемы выпадения волос как у женщин, так и у мужчин. При разработке средств мы обязательно учитывали некоторые дополнительные моменты: например, мы не использовали яркие парфюмированные ароматы: в ароматах наших продуктов преобладают лёгкие древесные, хвойные, цитрусовые, лавандовые или мятные ноты. В составе средств есть специальные компоненты, которые отвечают за регуляцию работы сальных желёз или за снятие мышечного спазма (это одни из частых причин выпадения волос у мужчин). Это и удобная упаковка сыворотки в монодозы, использование которых не требуют сложных и длительных манипуляций – средство наносится непосредственно на кожу головы за 30 минут до мытья. </p>
             </article>
           </div>
         </div>
@@ -386,6 +427,37 @@
           <p class="section-title__sub">отзывы</p>
           <h2 class="section-title">Что говорят о нас любимые клиенты</h2>
           <div id="reviews-slider" class="reviews-slider">
+            <div class="reviews-slider__item reviews-slider__item--text">
+              <div class="reviews-slider__text">
+                <p>Капсулы мне понравились. Т.к., пользуюсь недавно, результата пока нет. Но волос становится визуально больше.</p>
+                <p>Они рассчитаны на 1 месяц применения, наносятся перед мытьем головы. Только мне не понятно, как при ежедневном мытье волос растянуть 10 капсул на 1 месяц.
+                  1-й раз у меня ушла целая капсула. Затем я приноровилась, но все равно уходит половина капсулы. Т.е., в лучшем случае их хватит на 20 дней.
+                  Поживем - посмотрим.</p>
+                <a class="reviews-slider__more-link" href="#">oz.by</a>
+              </div>
+            </div>
+            <div class="reviews-slider__item reviews-slider__item--text">
+              <div class="reviews-slider__text">
+                <p>Пару лет назад это средство спасло мои волосы от сильного выпадения. Купила снова. Ампулы хватает на два применения.</p>
+                <a class="reviews-slider__more-link" href="#">oz.by</a>
+              </div>
+            </div>
+            <div class="reviews-slider__item reviews-slider__item--text">
+              <div class="reviews-slider__text">
+                <p>Эта серия, а в частности, эта сыворотка спасла мои выпадающие волосы. Повезло пообщаться с консультантом Модума, которая рассказала мне принцип действия этих ампул: что их надо наносить на кожу головы, т.к. в составе есть компоненты, которые улучшают кровообращение и стимулируют рост новых волос, а так же укрепляя уже имеющиеся )) По всей длине волос не я не распределяла!
+                  Цена приятно радует, т.к. раньше покупала у итальянского производителя 1 ампулу за 7р, но там немного другой эффект преследовала. А вот против выпадения эта сыворотка - да! Теперь после сушки волос феном в ванной не копна валяется на полу, а 3-5 волосинок )))</p>
+                <a class="reviews-slider__more-link" href="#">oz.by</a>
+              </div>
+            </div>
+            <div class="reviews-slider__item reviews-slider__item--text">
+              <div class="reviews-slider__text">
+                <p>У меня за один раз уходит 2 ампулы, поскольку более привычен объем ампул 10 мл для стимулирующих средств. Это для точечного применения может подойти стандарт 6 мл, а 5 мл это вообще редкая дозировка в таких средствах. Странно, что сыворотка смываемая, первый раз сталкиваюсь с подобным в таких средствах. В общем, эффекта не заметила вообще, да и порядок расположения в составе компонент не радует. И опять же первый раз такое, чтобы в составе был ментол и перец, а ты этого не чувствуешь при нанесении. Из плюсов - цена.</p>
+                <a class="reviews-slider__more-link" href="#">oz.by</a>
+              </div>
+            </div>
+            <div class="reviews-slider__item">
+              <img class="reviews-slider__thumbnail" src="images/thumb-review-3.jpg" alt="" width="310" height="630">
+            </div>
             <div class="reviews-slider__item">
               <img class="reviews-slider__thumbnail" src="images/thumb-review-1.jpg" alt="" width="310" height="630">
             </div>
@@ -393,34 +465,7 @@
               <img class="reviews-slider__thumbnail" src="images/thumb-review-2.jpg" alt="" width="310" height="630">
             </div>
             <div class="reviews-slider__item">
-              <img class="reviews-slider__thumbnail" src="images/thumb-review-3.jpg" alt="" width="310" height="630">
-            </div>
-            <div class="reviews-slider__item">
               <img class="reviews-slider__thumbnail" src="images/thumb-review-4.jpg" alt="" width="310" height="630">
-            </div>
-            <div class="reviews-slider__item reviews-slider__item--text">
-              <div class="reviews-slider__text">
-                <p>Капсулы мне понравились. Т.к., пользуюсь недавно, результата пока нет. Но волос становится визуально больше.</p>
-                <p>Они рассчитаны на 1 месяц применения, наносятся перед мытьем головы. Только мне не понятно, как при ежедневном мытье волос растянуть 10 капсул на 1 месяц.
-                  1-й раз у меня ушла целая капсула. Затем я приноровилась, но все равно уходит половина капсулы. Т.е., в лучшем случае их хватит на 20 дней.
-                  Поживем - посмотрим.</p>
-              </div>
-            </div>
-            <div class="reviews-slider__item reviews-slider__item--text">
-              <div class="reviews-slider__text">
-                <p>Пару лет назад это средство спасло мои волосы от сильного выпадения. Купила снова. Ампулы хватает на два применения.</p>
-              </div>
-            </div>
-            <div class="reviews-slider__item reviews-slider__item--text">
-              <div class="reviews-slider__text">
-                <p>Эта серия, а в частности, эта сыворотка спасла мои выпадающие волосы. Повезло пообщаться с консультантом Модума, которая рассказала мне принцип действия этих ампул: что их надо наносить на кожу головы, т.к. в составе есть компоненты, которые улучшают кровообращение и стимулируют рост новых волос, а так же укрепляя уже имеющиеся )) По всей длине волос не я не распределяла!
-                  Цена приятно радует, т.к. раньше покупала у итальянского производителя 1 ампулу за 7р, но там немного другой эффект преследовала. А вот против выпадения эта сыворотка - да! Теперь после сушки волос феном в ванной не копна валяется на полу, а 3-5 волосинок )))</p>
-              </div>
-            </div>
-            <div class="reviews-slider__item reviews-slider__item--text">
-              <div class="reviews-slider__text">
-                <p>У меня за один раз уходит 2 ампулы, поскольку более привычен объем ампул 10 мл для стимулирующих средств. Это для точечного применения может подойти стандарт 6 мл, а 5 мл это вообще редкая дозировка в таких средствах. Странно, что сыворотка смываемая, первый раз сталкиваюсь с подобным в таких средствах. В общем, эффекта не заметила вообще, да и порядок расположения в составе компонент не радует. И опять же первый раз такое, чтобы в составе был ментол и перец, а ты этого не чувствуешь при нанесении. Из плюсов - цена.</p>
-              </div>
             </div>
           </div>
         </div>

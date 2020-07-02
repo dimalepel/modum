@@ -1,5 +1,5 @@
 (function () {
-  // Фабрика слайдера впечатлений
+  // Фабрика слайдера отзывы
   function reviewsSlider(id) {
     const slider = $(id);
     if (slider) {
@@ -8,7 +8,27 @@
         dots: false,
         prevArrow: '<button type="button" class="slick-prev"><span class="visually-hidden">Предыдущий слайд</span><svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.46117 0L9 1.53883L3.94384 6.595L9 11.6512L7.46117 13.19L0.86617 6.595L7.46117 0Z"/></svg></button>',
         nextArrow: '<button type="button" class="slick-next"><span class="visually-hidden">Следующий слайд</span><svg width="9" height="14" viewBox="0 0 9 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.53883 0L0 1.53883L5.05616 6.595L0 11.6512L1.53883 13.19L8.13383 6.595L1.53883 0Z"/></svg></button>',
-        slidesToShow: 4
+        slidesToShow: 4,
+        responsive: [
+          {
+            breakpoint: 1025,
+            settings: {
+              slidesToShow: 3
+            }
+          },
+          {
+            breakpoint: 769,
+            settings: {
+              slidesToShow: 2
+            }
+          },
+          {
+            breakpoint: 481,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
       });
     }
   }
