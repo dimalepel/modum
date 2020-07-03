@@ -17,7 +17,7 @@
             }
           },
           {
-            breakpoint: 769,
+            breakpoint: 861,
             settings: {
               slidesToShow: 2
             }
@@ -39,6 +39,7 @@
       $([document.documentElement, document.body]).animate({
         scrollTop: $($(this).attr('href')).offset().top
       }, 2000);
+      $('.page-header__menu-wrapper.show').removeClass('show');
       return false;
     });
   }
@@ -93,4 +94,18 @@
     }
   }
   yandexMapConstructor('map', [53.881987,27.561598], 'улица Володько, 6');
+  // Мобильное меню - Открыть
+  function openAside(trigger, destination) {
+    $(trigger).on( 'click', function(){
+      $(destination).addClass('show');
+    });
+  }
+  openAside('.menu-trigger', '.page-header__menu-wrapper')
+  // Мобильное меню - Закрыть
+  function closeAside(trigger, destination) {
+    $(trigger).on( 'click', function(){
+      $(destination).removeClass('show');
+    });
+  }
+  closeAside('.main-menu__close', '.page-header__menu-wrapper')
 })();
