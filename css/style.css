@@ -442,7 +442,8 @@ a {
       height: 480px;
       background-image: url("../images/bg-promo-mob.jpg");
       background-position: center bottom;
-      background-repeat: no-repeat; } }
+      background-repeat: no-repeat;
+      background-size: cover; } }
   .promo::before {
     content: "";
     position: absolute;
@@ -713,7 +714,7 @@ a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-  @media (max-width: 480px) {
+  @media (max-width: 640px) {
     .about__list {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -755,7 +756,7 @@ a {
 
 .about-item {
   width: calc((100% - 40px) / 3); }
-  @media (max-width: 480px) {
+  @media (max-width: 640px) {
     .about-item {
       width: 100%;
       margin-bottom: 23px; } }
@@ -1147,6 +1148,9 @@ a {
       width: calc(50% - 10px);
       margin: 5px;
       padding: 7px 6px 30px; } }
+  @media (max-width: 320px) {
+    .product {
+      width: calc(100% - 10px); } }
   .product:hover {
     -webkit-box-shadow: 0 4px 24px #CFDCD8;
     box-shadow: 0 4px 24px #CFDCD8; }
@@ -1282,7 +1286,7 @@ a {
   @media (max-width: 1023px) {
     .history-brand {
       margin-left: 0; } }
-  @media (max-width: 768px) {
+  @media (max-width: 960px) {
     .history-brand {
       margin-left: -15px;
       margin-right: -15px;
@@ -1290,10 +1294,10 @@ a {
       padding-right: 15px; } }
   @media (max-width: 480px) {
     .history-brand {
-      margin-left: 0;
-      margin-right: 0;
+      margin-left: -10px;
+      margin-right: -10px;
       margin-top: 45px;
-      padding: 30px 0 35px; } }
+      padding: 30px 10px 35px; } }
   .history-brand::before {
     content: "";
     position: absolute;
@@ -1308,6 +1312,11 @@ a {
     @media (max-width: 1440px) {
       .history-brand::before {
         background-position: -180px 140px; } }
+    @media (max-width: 960px) {
+      .history-brand::before {
+        width: auto;
+        right: 0;
+        background-position: 50% 0; } }
   .history-brand p {
     max-width: 770px;
     margin-bottom: 14px;
@@ -1795,12 +1804,15 @@ a {
     .stages {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; } }
-  @media (max-width: 480px) {
+  @media (max-width: 580px) {
     .stages {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
       margin-top: 45px; } }
 
 .articles {
@@ -1855,6 +1867,9 @@ a {
       padding-right: 9px;
       padding-left: 9px;
       padding-bottom: 22px; } }
+  @media (max-width: 320px) {
+    .article-item {
+      width: calc(100% - 10px); } }
   .article-item:hover {
     border-color: var(--basic-green); }
 
