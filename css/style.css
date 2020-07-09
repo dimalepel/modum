@@ -1376,6 +1376,7 @@ a {
   margin-bottom: 0;
   font-size: 34px;
   line-height: 41px;
+  font-weight: 400;
   text-align: center; }
   @media (max-width: 1023px) {
     .faq__title {
@@ -2389,7 +2390,7 @@ a {
       display: none; } }
 
 .card__title {
-  margin-top: -2px;
+  margin-top: -5px;
   margin-bottom: 0;
   font-weight: 400;
   font-size: 24px;
@@ -2405,12 +2406,14 @@ a {
   font-size: 17px;
   line-height: 20px;
   color: #5A6870; }
+  .card__sku--hidden {
+    display: none; }
   @media (max-width: 480px) {
     .card__sku {
       margin-top: 15px; } }
 
 .card__price {
-  margin-top: 12px;
+  margin-top: 27px;
   margin-bottom: 28px;
   font-weight: 500;
   font-size: 22px;
@@ -2425,13 +2428,32 @@ a {
   .card__sku + .card__price {
     margin-top: 34px; }
 
+.card__price-old {
+  position: relative;
+  display: inline-block;
+  margin-left: 18px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #5A6870;
+  vertical-align: middle; }
+  .card__price-old::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    -webkit-transform: rotate(-14deg);
+    transform: rotate(-14deg);
+    border-bottom: 1px solid #5A6870; }
+
 .card__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 40px;
-  margin-top: 80px;
-  margin-bottom: 42px;
+  margin-top: 57px;
+  margin-bottom: 54px;
   border-bottom: 1px dashed #889D9A; }
   @media (max-width: 1023px) {
     .card__buttons {
@@ -2515,27 +2537,36 @@ a {
     @media (max-width: 480px) {
       .card__detail::before {
         top: -6px; } }
+  .card__detail ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none; }
   .card__detail p {
     margin-bottom: 6px; }
     @media (max-width: 480px) {
       .card__detail p {
         font-size: 16px;
         line-height: 19px; } }
-  .card__detail--about::before {
+  .card__detail--complex-about::before {
     background-image: url("../images/ico-check.svg"); }
-  .card__detail--delivery::before {
-    top: 3px;
-    background-image: url("../images/ico-car.svg"); }
+  .card__detail--about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0; }
+    @media (max-width: 960px) {
+      .card__detail--about {
+        display: block; } }
+    .card__detail--about::before {
+      display: none; }
+  .card__detail--delivery {
+    max-width: 460px; }
+    .card__detail--delivery::before {
+      top: 3px;
+      background-image: url("../images/ico-car.svg"); }
   .card__detail:not(:last-child) {
-    margin-bottom: 32px; }
-  .card__detail ul {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    list-style: none; }
-  @media (max-width: 480px) {
-    .card__detail li:not(:last-child) {
-      margin-bottom: 10px; } }
+    margin-bottom: 52px; }
   .card__detail a {
     color: var(--basic-green);
     text-decoration: none; }
@@ -2624,9 +2655,6 @@ a {
     transition: -webkit-transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
     transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1);
     transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.3s cubic-bezier(0.55, 0, 0.1, 1); }
-  @media (max-width: 480px) {
-    .card-tabs__item--youtube {
-      display: none; } }
   .card-tabs__item--youtube::before {
     content: "";
     display: inline-block;
@@ -2675,6 +2703,7 @@ a {
       transition: transform 0.3s cubic-bezier(0.55, 0, 0.1, 1), -webkit-transform 0.3s cubic-bezier(0.55, 0, 0.1, 1); }
 
 .card-tabs__content {
+  width: 100%;
   margin-top: 9px;
   border-top: 2px solid #EBF1F0; }
   @media (max-width: 480px) {
@@ -4017,3 +4046,88 @@ a {
     content: "Новинка"; }
   .product-label--hit::before {
     content: "Хит"; }
+
+.detail-about {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none; }
+  .card__detail--about .detail-about {
+    margin-right: 120px; }
+    @media (max-width: 960px) {
+      .card__detail--about .detail-about {
+        margin-right: 0; } }
+  .detail-about li {
+    position: relative;
+    padding-left: 50px;
+    letter-spacing: 0.2px;
+    font-size: 17px;
+    line-height: 51px;
+    color: #5A6870; }
+    @media (max-width: 480px) {
+      .detail-about li {
+        padding-left: 45px;
+        letter-spacing: 0;
+        font-size: 16px;
+        line-height: 45px; } }
+    .detail-about li::before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 0;
+      width: 34px;
+      height: 34px;
+      background-color: var(--basic-white);
+      background-image: url("../images/ico-check.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 50%; }
+      @media (max-width: 480px) {
+        .detail-about li::before {
+          top: 4px; } }
+
+.clinically-proven {
+  max-width: 225px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none; }
+
+.clinically-proven__title {
+  margin-left: -3px;
+  margin-top: 12px; }
+  .card__detail .clinically-proven__title {
+    margin-bottom: 12px; }
+
+.clinically-proven__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 40px;
+  padding-left: 60px;
+  letter-spacing: 0.2px;
+  font-size: 17px;
+  line-height: 20px;
+  color: #5A6870; }
+  .clinically-proven__item:not(:last-child) {
+    margin-bottom: 4px; }
+  .clinically-proven__item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 43px;
+    height: 40px;
+    background-color: #75AC40;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .clinically-proven__item--hair-loss::before {
+    background-image: url("../images/ico-hair-loss.svg"); }
+  .clinically-proven__item--thickness-hair::before {
+    background-image: url("../images/ico-thickness-hair.svg"); }
