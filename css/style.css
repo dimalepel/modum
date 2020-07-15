@@ -2191,6 +2191,18 @@ a {
   font-weight: 300;
   font-size: 30px;
   line-height: 42px; }
+  .page-inner .page-title {
+    margin-top: 45px;
+    margin-bottom: 54px;
+    font-size: 34px;
+    line-height: 41px;
+    font-weight: 400;
+    color: #1B262D; }
+    @media (max-width: 480px) {
+      .page-inner .page-title {
+        margin: .67em 0;
+        font-size: 20px;
+        line-height: 24px; } }
   @media (max-width: 480px) {
     .page-title {
       font-size: 20px;
@@ -3900,7 +3912,7 @@ a {
   color: var(--basic-green); }
 
 .page-main {
-  min-height: calc(100vh - 80.6px);
+  min-height: calc(100vh - 385.2px);
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
   .not-found .page-main {
@@ -3919,7 +3931,7 @@ a {
     justify-content: center;
     padding-right: 10px;
     padding-left: 10px;
-    height: calc(100vh - 80.6px);
+    height: calc(100vh - 385.2px);
     background-color: var(--basic-gray); }
     @media (max-width: 960px) {
       .not-found .page-main {
@@ -3929,7 +3941,7 @@ a {
         height: calc(100vh - 52px); } }
 
 .page-main__overlay {
-  min-height: calc(100vh - 80.6px);
+  min-height: calc(100vh - 385.2px);
   padding-top: 60px;
   padding-bottom: 100px;
   background-color: var(--basic-gray);
@@ -3938,6 +3950,8 @@ a {
   background-position: left bottom;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
+  .page-main__overlay--no-decor {
+    background-image: none; }
   @media (max-width: 1023px) {
     .page-main__overlay {
       background-image: none; } }
@@ -4131,3 +4145,15 @@ a {
     background-image: url("../images/ico-hair-loss.svg"); }
   .clinically-proven__item--thickness-hair::before {
     background-image: url("../images/ico-thickness-hair.svg"); }
+
+.page-inner {
+  max-width: 860px; }
+  .page-inner p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 24px;
+    color: #4B5962; }
+
+.page-inner .custom-paragraph {
+  font-weight: 500; }
